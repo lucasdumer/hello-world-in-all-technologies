@@ -1,5 +1,9 @@
 version: '3'
 services:
+  nodejs-express:
+    build: ./nodejs/express/
+    ports:
+      - 8080:8080
   python-flask:
     build: ./python/flask/
     ports:
