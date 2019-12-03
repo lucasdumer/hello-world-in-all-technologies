@@ -4,6 +4,10 @@ services:
     build: ./nodejs/express/
     ports:
       - 8080:8080
+  php-symfony:
+    build: ./php/symfony/
+    ports:
+      - 8000:8000
   python-flask:
     build: ./python/flask/
     ports:
