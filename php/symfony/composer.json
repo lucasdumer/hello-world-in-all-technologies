@@ -1,6 +1,6 @@
 {
     "require": {
         "php": ">=7.2.5",
-        "symfony/symfony": "v5.0.1"
+        "symfony/symfony": "4.1.0"
     }
 }
