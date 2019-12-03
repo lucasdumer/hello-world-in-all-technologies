@@ -1,5 +1,7 @@
 FROM python:3.7-alpine
 
+EXPOSE 5000
+
 WORKDIR /code
 
 ENV FLASK_APP src/app.py
