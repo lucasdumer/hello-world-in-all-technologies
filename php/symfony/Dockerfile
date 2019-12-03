@@ -1,8 +1,10 @@
 FROM php:7.3-cli
 
+EXPOSE 8000
+
 RUN curl -sS https://getcomposer.org/installer | php -- --install-dir=/usr/local/bin --filename=composer
 
-WORKDIR /code
+WORKDIR /var/www/html
 
 ENV APP_ENV dev
 ENV APP_DEBUG 0
