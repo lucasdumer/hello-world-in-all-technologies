@@ -4,6 +4,10 @@ services:
     build: ./nodejs/express/
     ports:
       - 8080:8080
+  nodejs-hapi:
+    build: ./nodejs/hapi/
+    ports:
+      - 8081:8081
   php-symfony:
     build: ./php/symfony/
     ports:
