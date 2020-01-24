@@ -20,7 +20,11 @@ services:
     build: ./php/symfony/
     ports:
       - 8000:8000
+  python-django:
+    build: ./python/django/
+    ports:
+      - 5000:8000
   python-flask:
     build: ./python/flask/
     ports:
-      - 5000:5000
+      - 5001:5000
