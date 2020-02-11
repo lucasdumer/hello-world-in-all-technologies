@@ -1,0 +1,26 @@
+{
+    "name": "zendframework",
+    "description": "Skeleton Application for Zend Framework zend-mvc applications",
+    "type": "project",
+    "license": "BSD-3-Clause",
+    "keywords": [
+        "framework",
+        "mvc",
+        "zf"
+    ],
+    "homepage": "http://framework.zend.com/",
+    "require": {
+        "php": "^7.0",
+        "zendframework/zend-component-installer": "^1.0 || ^2.1",
+        "zendframework/zend-mvc": "^3.1.1",
+        "zfcampus/zf-development-mode": "^3.2"
+    },
+    "autoload": {
+        "psr-4": {
+            "Application\\": "src/"
+        }
+    },
+    "scripts": {
+        "serve": "php -S 0.0.0.0:8080 -t src"
+    }
+}

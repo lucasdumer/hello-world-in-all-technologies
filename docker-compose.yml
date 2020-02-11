@@ -20,6 +20,10 @@ services:
     build: ./php/symfony/
     ports:
       - 8000:8000
+  php-zendframework:
+    build: ./php/zendframework/
+    ports:
+      - 8001:8080
   python-django:
     build: ./python/django/
     ports:
