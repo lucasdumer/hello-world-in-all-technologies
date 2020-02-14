@@ -1,5 +1,9 @@
 version: '3'
 services:
+  go-gorillamux:
+    build: ./go/gorillamux/
+    ports:
+      - 1234:8080
   nodejs-express:
     build: ./nodejs/express/
     ports:
