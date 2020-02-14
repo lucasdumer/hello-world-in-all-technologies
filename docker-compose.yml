@@ -16,14 +16,18 @@ services:
     build: ./nodejs/nextjs/
     ports:
       - 8083:3000
+  php-slim:
+    build: ./php/slim/
+    ports:
+      - 8000:8000
   php-symfony:
     build: ./php/symfony/
     ports:
-      - 8000:8000
+      - 8001:8000
   php-zendframework:
     build: ./php/zendframework/
     ports:
-      - 8001:8080
+      - 8002:8080
   python-django:
     build: ./python/django/
     ports:
