@@ -1,4 +1,4 @@
-FROM php:7.0-apache
+FROM php:7.1-apache
 
 EXPOSE 8080
 
@@ -7,13 +7,15 @@ RUN apt-get update \
  && docker-php-ext-install zip \
  && a2enmod rewrite \
  && sed -i 's!/var/www/html!/var/www/public!g' /etc/apache2/sites-available/000-default.conf \
- && mv /var/www/html /var/www/public \
- && curl -sS https://getcomposer.org/installer \
-  | php -- --install-dir=/usr/local/bin --filename=composer
+ && mv /var/www/html /var/www/public
+
+RUN curl -sS https://getcomposer.org/installer | php -- --install-dir=/usr/local/bin --filename=composer
 
 WORKDIR /var/www
 
 COPY composer.json composer.json
+
+RUN composer self-update --1
 
 RUN composer install --verbose
 

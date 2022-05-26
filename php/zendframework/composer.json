@@ -1,5 +1,4 @@
 {
-    "name": "zendframework",
     "description": "Skeleton Application for Zend Framework zend-mvc applications",
     "type": "project",
     "license": "BSD-3-Clause",
@@ -11,7 +10,7 @@
     "homepage": "http://framework.zend.com/",
     "require": {
         "php": "^7.0",
-        "zendframework/zend-component-installer": "^1.0 || ^2.1",
+        "zendframework/zend-component-installer": "^1.0",
         "zendframework/zend-mvc": "^3.1.1",
         "zfcampus/zf-development-mode": "^3.2"
     },
