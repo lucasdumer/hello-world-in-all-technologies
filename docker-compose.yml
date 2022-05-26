@@ -20,6 +20,10 @@ services:
     build: ./nodejs/nextjs/
     ports:
       - 8083:3000
+  php-laravel:
+    build: ./php/laravel/
+    ports:
+      - 8003:8000
   php-slim:
     build: ./php/slim/
     ports:
