@@ -14,6 +14,7 @@ ENV APP_ENV dev
 ENV APP_DEBUG 0
 
 COPY composer.json composer.json
+COPY .env.example .env
 
 COPY . .
 
